@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f1c519-f235-4930-aea7-80533a8aa1aa" name="变更" comment="save">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multilingual.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnsafeUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/其他流的基本使用.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/字符流基本使用.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/字节流基本使用.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/枚举.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/缓冲流基本使用.java" afterDir="false" />
+    <list default="true" id="43f1c519-f235-4930-aea7-80533a8aa1aa" name="变更" comment=":safety_vest: save">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadLocalExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/volatile不保证原子性.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/双重校验锁实现对象单例.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/video.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/playground.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +71,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.其他流的基本使用">
+  <component name="RunManager" selected="Application.volatile不保证原子性">
     <configuration name="其他流的基本使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="其他流的基本使用" />
       <module name="playground" />
@@ -93,22 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="字节流基本使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="字节流基本使用" />
-      <module name="playground" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="字符流基本使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="字符流基本使用" />
-      <module name="playground" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Person" />
+      <module name="playground" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="volatile不保证原子性 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="volatile不保证原子性" />
+      <module name="playground" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="volatile不保证原子性" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="volatile不保证原子性" />
       <module name="playground" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.volatile不保证原子性" />
+        <item itemvalue="Application.volatile不保证原子性 (1)" />
         <item itemvalue="Application.其他流的基本使用" />
         <item itemvalue="JUnit.缓冲流基本使用.copy_pdf_to_another_pdf_stream" />
         <item itemvalue="JUnit.缓冲流基本使用.copy_pdf_to_another_pdf_buffer_stream" />
-        <item itemvalue="Application.字符流基本使用" />
-        <item itemvalue="Application.字节流基本使用" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +168,7 @@
       <workItem from="1679135834005" duration="15000" />
       <workItem from="1679135862445" duration="13000" />
       <workItem from="1679150583666" duration="4228000" />
-      <workItem from="1679237053109" duration="17833000" />
+      <workItem from="1679237053109" duration="24663000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667978541169</created>
@@ -205,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679150624819</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":safety_vest: save">
+      <created>1679331918268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679331918268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +219,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="存档" />
     <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value=":safety_vest: save" />
+    <option name="LAST_COMMIT_MESSAGE" value=":safety_vest: save" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
