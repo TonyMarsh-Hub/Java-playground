@@ -1,3 +1,5 @@
+package 多线程;
+
 import java.text.SimpleDateFormat;
 import java.util.Random;
 

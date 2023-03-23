@@ -1,3 +1,5 @@
+package IO流;
+
 import java.io.*;
 
 public class 其他流的基本使用 {

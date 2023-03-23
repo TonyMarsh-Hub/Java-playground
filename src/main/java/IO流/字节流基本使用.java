@@ -1,3 +1,5 @@
+package IO流;
+
 import java.io.*;
 
 public class 字节流基本使用 {
