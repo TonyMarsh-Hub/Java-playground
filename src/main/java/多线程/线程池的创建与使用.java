@@ -1,14 +1,11 @@
 package 多线程;
 
 import java.util.Date;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class 线程池的创建与使用 {
-    public static void main(String[] args) {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
+    public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 5, // 核心线程数
                 10, // 最大线程数
                 60, // 线程空闲时间 （当目前线程数大于核心线程数时，多余的空闲的线程的存活时间）
@@ -65,16 +62,37 @@ public class 线程池的创建与使用 {
         int CORE_POOL_SIZE = 5;
         int MAX_POOL_SIZE = 10;
         int KEEP_ALIVE_TIME = 60;
-        threadPoolExecutor.setCorePoolSize(CORE_POOL_SIZE);
-        threadPoolExecutor.setMaximumPoolSize(MAX_POOL_SIZE);
-        threadPoolExecutor.setKeepAliveTime(KEEP_ALIVE_TIME, TimeUnit.SECONDS);
+        executor.setCorePoolSize(CORE_POOL_SIZE);
+        executor.setMaximumPoolSize(MAX_POOL_SIZE);
+        executor.setKeepAliveTime(KEEP_ALIVE_TIME, TimeUnit.SECONDS);
 
         for (int i = 0; i < 10; i++) {
             MyRunnable myRunnable = new MyRunnable("task" + i);
-            threadPoolExecutor.execute(myRunnable);
+            executor.execute(myRunnable);
         }
-        threadPoolExecutor.shutdown();
-        while (!threadPoolExecutor.isTerminated()) { } //仅保持主线程不退出
+
+        //还可以使用submit方法提交callable任务,其返回一个Future类型的返回值用于获取任务执行结果与其他操作等
+        Future<String> submit = executor.submit(() -> {
+            try {
+                Thread.sleep(100L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "the call is done";
+        });
+        String s = submit.get(10, TimeUnit.SECONDS);// get方法会阻塞当前线程直到任务完成或者超时
+        System.out.println(s);
+        // Future还可以执行一些其他操作：
+//        submit.isCancelled();
+//        submit.cancel(true);// 取消任务
+
+
+        executor.shutdown(); // 关闭线程池,会等待所有任务执行完毕后再关闭
+        //  还有shutdownNow, 其立即结束,返回 List<Runnable> 没处理的任务队列
+
+
+        while (!executor.isTerminated()) {  // isTerminated 判断线程池是否已经执行完所有任务且关闭 ,对应的还有isShutDown，其只检查是否执行了shutdown方法，不管遗留任务是否完成与否
+        } //仅保持主线程不退出
         System.out.println("Finished all threads");
 
 
@@ -82,7 +100,7 @@ public class 线程池的创建与使用 {
 }
 
 /**
- * 自定义的简单Runnable类，需要大约5s的执行时间
+ * 自定义的简单Runnable类，需要大约1s的执行时间
  */
 class MyRunnable implements Runnable {
     private final String command;
@@ -100,7 +118,7 @@ class MyRunnable implements Runnable {
 
     private void processCommand() {
         try {
-            Thread.sleep(5000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
