@@ -1,3 +1,5 @@
+package pojo;
+
 import java.io.Serial;
 import java.io.Serializable;
 
@@ -25,7 +27,7 @@ public class Pojo implements Serializable {
 
     @Override
     public String toString() {
-        return "Pojo{" +
+        return "pojo.Pojo{" +
                 "id=" + id +
                 '}';
     }

@@ -1,5 +1,6 @@
 package 多线程;
 
+import java.util.Date;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -57,5 +58,56 @@ public class 线程池的创建与使用 {
             ScheduledThreadPool 和 SingleThreadScheduledExecutor :
             使用的无界的延迟阻塞队列DelayedWorkQueue，任务队列最大长度为 Integer.MAX_VALUE,可能堆积大量的请求，从而导致 OOM。
     */   // 1 使用ThreadPoolExecutor创建线程池（推荐）
+
+
+        /*使用*/
+        // 补充：我们可以在runtime修改线程池的参数,除了任务队列长度  (当然这一点可以自己拓展实现)
+        int CORE_POOL_SIZE = 5;
+        int MAX_POOL_SIZE = 10;
+        int KEEP_ALIVE_TIME = 60;
+        threadPoolExecutor.setCorePoolSize(CORE_POOL_SIZE);
+        threadPoolExecutor.setMaximumPoolSize(MAX_POOL_SIZE);
+        threadPoolExecutor.setKeepAliveTime(KEEP_ALIVE_TIME, TimeUnit.SECONDS);
+
+        for (int i = 0; i < 10; i++) {
+            MyRunnable myRunnable = new MyRunnable("task" + i);
+            threadPoolExecutor.execute(myRunnable);
+        }
+        threadPoolExecutor.shutdown();
+        while (!threadPoolExecutor.isTerminated()) { } //仅保持主线程不退出
+        System.out.println("Finished all threads");
+
+
+    }
+}
+
+/**
+ * 自定义的简单Runnable类，需要大约5s的执行时间
+ */
+class MyRunnable implements Runnable {
+    private final String command;
+
+    public MyRunnable(String s) {
+        this.command = s;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName() + " Start. Time = " + new Date());
+        processCommand();
+        System.out.println(Thread.currentThread().getName() + " End. Time = " + new Date());
+    }
+
+    private void processCommand() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public String toString() {
+        return this.command;
     }
 }
