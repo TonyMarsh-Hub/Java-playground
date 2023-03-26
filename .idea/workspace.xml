@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f1c519-f235-4930-aea7-80533a8aa1aa" name="变更" comment=":safety_vest: save">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/tonymarsh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/原子类/基本类型原子类的使用.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/原子类/引用类型的原子类的使用.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/锁/锁_CyclicBarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/锁/锁_Semaphone和CountDownLatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/UnsafeUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/多线程/UnsafeUsage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/线程池的创建与使用.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/多线程/线程池的创建与使用.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/volatile不保证原子性.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/volatile不保证原子性.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/双重校验锁实现对象单例.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/双重校验锁实现对象单例.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/线程池的创建与使用.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/多线程/线程池/线程池的创建与使用.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +79,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.线程池的创建与使用 (1)">
+  <component name="RunManager" selected="Application.AtomicStampedReferenceDemo">
     <configuration name="线程池的创建与使用 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="多线程.线程池的创建与使用" />
       <module name="playground" />
@@ -88,8 +97,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="基本类型原子类的使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.原子类.基本类型原子类的使用" />
+      <module name="playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="线程池的创建与使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.线程池的创建与使用" />
+      <option name="MAIN_CLASS_NAME" value="多线程.线程池.线程池的创建与使用" />
+      <module name="playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AtomicStampedReferenceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.原子类.AtomicStampedReferenceDemo" />
+      <module name="playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="锁_CyclicBarrier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.锁.锁_CyclicBarrier" />
+      <module name="playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="锁_Semaphone和CountDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.锁_Semaphone和CountDown" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
@@ -101,38 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="使用set集合的特性来做distinct操作" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="集合.使用set集合的特性来做distinct操作" />
+    <configuration name="锁_Semaphone和CountDownLatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.锁.锁_Semaphone和CountDownLatch" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="集合.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="为treemap指定排序规则 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="集合.为treemap指定排序规则" />
-      <module name="playground" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="集合.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="为treemap指定排序规则" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="集合.为treemap指定排序规则" />
-      <module name="playground" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="集合.*" />
+          <option name="PATTERN" value="多线程.原子类.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.线程池的创建与使用 (1)" />
-        <item itemvalue="Application.线程池的创建与使用" />
-        <item itemvalue="Application.使用set集合的特性来做distinct操作" />
-        <item itemvalue="Application.为treemap指定排序规则" />
-        <item itemvalue="Application.为treemap指定排序规则 (1)" />
+        <item itemvalue="Application.AtomicStampedReferenceDemo" />
+        <item itemvalue="Application.基本类型原子类的使用" />
+        <item itemvalue="Application.锁_CyclicBarrier" />
+        <item itemvalue="Application.锁_Semaphone和CountDown" />
+        <item itemvalue="Application.锁_Semaphone和CountDownLatch" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +229,9 @@
       <workItem from="1679478583975" duration="1262000" />
       <workItem from="1679479865498" duration="4025000" />
       <workItem from="1679557580453" duration="13000" />
-      <workItem from="1679557610946" duration="5930000" />
+      <workItem from="1679557610946" duration="8877000" />
+      <workItem from="1679659973649" duration="4131000" />
+      <workItem from="1679732258195" duration="9345000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667978541169</created>
@@ -252,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679560125897</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":safety_vest: save">
+      <created>1679573081856</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679573081856</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,3 @@
-package 多线程;
-
 public class 双重校验锁实现对象单例 {
     public static void main(String[] args) {
         Singleton instance = Singleton.getInstance();
@@ -31,7 +29,7 @@ class Singleton {
 
 /*uniqueInstance 采用 volatile 关键字修饰也是很有必要的
 
-uniqueInstance = new 多线程.Singleton(); 这段代码其实是分为三步执行：
+uniqueInstance = new Singleton(); 这段代码其实是分为三步执行：
 为 uniqueInstance 分配内存空间
 初始化 uniqueInstance
 将 uniqueInstance 指向分配的内存地址
@@ -42,4 +40,4 @@ uniqueInstance = new 多线程.Singleton(); 这段代码其实是分为三步执
 因此返回 uniqueInstance，但此时 uniqueInstance 还未被初始化。#
  */
 
-/*补充 ，仅使用volatile关键字无法保证原子性，只能保证可见性 具体见 多线程.volatile不保证原子性.java*/
+/*补充 ，仅使用volatile关键字无法保证原子性，只能保证可见性 具体见 volatile不保证原子性.java*/

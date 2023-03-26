@@ -1,4 +1,4 @@
-package 多线程;
+package 多线程.线程池;
 
 import java.util.Date;
 import java.util.concurrent.*;
@@ -38,7 +38,7 @@ public class 线程池的创建与使用 {
 
 
         // 2. 使用Executor框架工具类Executors来创建
-        Executors.newFixedThreadPool(5); // 创建固定大小的线程池
+        ExecutorService fixedPoolExecutor = Executors.newFixedThreadPool(5);// 创建固定大小的线程池
 
     /*
              之所以推荐使用ThreadPoolExecutor的方式创建线程池是因为
