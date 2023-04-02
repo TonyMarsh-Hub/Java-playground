@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f1c519-f235-4930-aea7-80533a8aa1aa" name="变更" comment=":safety_vest: save">
-      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/原子类/原子更新器.java" afterDir="false" />
+    <list default="true" id="43f1c519-f235-4930-aea7-80533a8aa1aa" name="变更" comment=":beers: 可继承ThreadLocal的使用示例">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/CompletableFuture/创建方式与简单使用.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/多线程/CompletableFuture/组合任务allOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/playground.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/多线程/CompletableFuture使用.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Record" />
+        <option value="module-info" />
         <option value="Class" />
       </list>
     </option>
@@ -44,27 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tonymarsh/Developments/playground&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.19154443&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/tonymarsh/Developments/playground",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/opt/homebrew/lib/node_modules/prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.19154443",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.codegpt",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -76,13 +90,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AtomicStampedReferenceDemo">
-    <configuration name="基本类型原子类的使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.原子类.基本类型原子类的使用" />
+  <component name="RunManager" selected="Application.创建方式与简单使用案例">
+    <configuration name="创建方式与简单使用" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.CompletableFuture.创建方式与简单使用" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="PATTERN" value="多线程.CompletableFuture.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AtomicStampedReferenceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.原子类.AtomicStampedReferenceDemo" />
+    <configuration name="InheritableThreadLocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.ThreadLocal.InheritableThreadLocalDemo" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="PATTERN" value="多线程.ThreadLocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="原子更新器" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.原子类.原子更新器" />
+    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.ThreadLocal.ThreadLocalTest" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="PATTERN" value="多线程.ThreadLocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="锁_CyclicBarrier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.锁.锁_CyclicBarrier" />
+    <configuration name="锁_Semaphone和CountDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.锁_Semaphone和CountDown" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="多线程.原子类.*" />
+          <option name="PATTERN" value="多线程.CompletableFuture.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="锁_Semaphone和CountDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="多线程.锁_Semaphone和CountDown" />
+    <configuration name="组合任务allOf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="多线程.CompletableFuture.组合任务allOf" />
       <module name="playground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="多线程.*" />
+          <option name="PATTERN" value="多线程.CompletableFuture.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,10 +171,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.锁_Semaphone和CountDown" />
-        <item itemvalue="Application.锁_CyclicBarrier" />
-        <item itemvalue="Application.基本类型原子类的使用" />
-        <item itemvalue="Application.AtomicStampedReferenceDemo" />
+        <item itemvalue="Application.创建方式与简单使用案例" />
+        <item itemvalue="Application.组合任务allOf" />
+        <item itemvalue="Application.InheritableThreadLocalDemo" />
+        <item itemvalue="Application.ThreadLocalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +231,23 @@
       <workItem from="1679985782690" duration="117000" />
       <workItem from="1679985913278" duration="663000" />
       <workItem from="1679999640015" duration="612000" />
+      <workItem from="1680015925871" duration="1106000" />
+      <workItem from="1680067448060" duration="56000" />
+      <workItem from="1680067515536" duration="169000" />
+      <workItem from="1680067807689" duration="88000" />
+      <workItem from="1680067906344" duration="10000" />
+      <workItem from="1680068079294" duration="28000" />
+      <workItem from="1680068114240" duration="1171000" />
+      <workItem from="1680088596687" duration="44000" />
+      <workItem from="1680088653550" duration="19000" />
+      <workItem from="1680088681869" duration="1276000" />
+      <workItem from="1680093744251" duration="9000" />
+      <workItem from="1680093761374" duration="1354000" />
+      <workItem from="1680176732197" duration="11087000" />
+      <workItem from="1680269657302" duration="1918000" />
+      <workItem from="1680340038441" duration="4000" />
+      <workItem from="1680340633626" duration="2419000" />
+      <workItem from="1680360850242" duration="12591000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667978541169</created>
@@ -288,7 +319,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679832313371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":beers: 原子更新器">
+      <created>1680015950980</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015950980</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改为一个更加好的使用案例">
+      <created>1680194153720</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680194153720</updated>
+    </task>
+    <task id="LOCAL-00013" summary=":beers: 可继承ThreadLocal的使用示例">
+      <created>1680209205019</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680209205019</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +363,10 @@
     <MESSAGE value="save" />
     <MESSAGE value=":safety_vest: saveˆ" />
     <MESSAGE value=":safety_vest: save" />
-    <option name="LAST_COMMIT_MESSAGE" value=":safety_vest: save" />
+    <MESSAGE value=":beers: 原子更新器" />
+    <MESSAGE value="修改为一个更加好的使用案例" />
+    <MESSAGE value=":beers: 可继承ThreadLocal的使用示例" />
+    <option name="LAST_COMMIT_MESSAGE" value=":beers: 可继承ThreadLocal的使用示例" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

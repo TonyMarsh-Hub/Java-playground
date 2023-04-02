@@ -9,8 +9,5 @@
         <module name="playground" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="playground" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
